@@ -3,7 +3,7 @@ import 'package:notes_app/theme/theme.dart';
 
 class ThemeProvider with ChangeNotifier {
   ThemeData _themeData = lightMode;
-  ThemeData get themeData => themeData;
+  ThemeData get themeData => _themeData;
   bool get isDarkMode => _themeData == darkMode;
 
   set themeDate(ThemeData themedata){
